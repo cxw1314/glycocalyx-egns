@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+# large inputs / derived matrices are fetched, not committed
+data/
+results/
+*.h5ad
+*.h5
+*.mtx
+*.mtx.gz
+figures/
+code_repository/
