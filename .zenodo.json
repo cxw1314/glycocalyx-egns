@@ -1,0 +1,26 @@
+{
+  "title": "glycocalyx-egns: analysis code for endothelial glycocalyx non-resolution after myocardial infarction",
+  "description": "Analysis scripts reproducing all module scores, statistical tests, spatial analyses, communication inference, perturbation analyses and figures of the manuscript. Two methods are documented re-implementations rather than official tool runs (network edge-ablation inspired by scTenifoldKnk; a CellOracle-inspired vector-field analysis that failed its own trajectory-validity check and is reported only as a negative result).",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "version": "1.0.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Cao, Xingwang"
+    },
+    {
+      "name": "Wang, Ting"
+    }
+  ],
+  "keywords": [
+    "endothelial glycocalyx",
+    "myocardial infarction",
+    "single-cell RNA sequencing",
+    "spatial transcriptomics",
+    "fibrosis",
+    "MMP9"
+  ],
+  "related_identifiers": []
+}
