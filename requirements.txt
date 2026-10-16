@@ -1,0 +1,17 @@
+# Pinned to the environment used for the manuscript
+# Python 3.12.13
+
+numpy==2.5.4
+pandas==2.3.3
+scipy==1.18.1
+scikit-learn==1.9.1
+anndata==0.13.4
+scanpy==1.12.4
+matplotlib==3.11.2
+seaborn==0.13.2
+statsmodels==0.15.0
+h5py==3.16.0
+networkx==3.7
+liana==1.10.0
+decoupler==2.2.0
+adjustText==1.4.0

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the manuscript below."
+title: "glycocalyx-egns"
+abstract: >-
+  Analysis code for a transcriptionally defined endothelial glycocalyx
+  non-resolution state linking immune proteolysis to post-infarction
+  fibrosis.
+type: software
+version: "1.0.0"
+date-released: "2026-10-16"
+license: MIT
+repository-code: "https://github.com/cxw1314/glycocalyx-egns"
+authors:
+  - family-names: "Cao"
+    given-names: "Xingwang"
+  - family-names: "Wang"
+    given-names: "Ting"
+preferred-citation:
+  type: article
+  title: >-
+    A transcriptionally defined endothelial glycocalyx non-resolution state
+    links immune proteolysis to post-infarction fibrosis
+  journal: "Journal of Molecular and Cellular Cardiology"
+  year: 2026

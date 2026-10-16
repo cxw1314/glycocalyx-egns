@@ -1,0 +1,80 @@
+{
+  "_comment": "Predefined biological modules for the endothelial glycocalyx non-resolution framework. Human symbols are authoritative; aliases are used for mouse ortholog mapping (case-insensitive match).",
+  "GCI": {
+    "name_cn": "糖萼结构/合成模块",
+    "name_en": "Glycocalyx integrity / biosynthesis",
+    "score": "Glycocalyx Integrity Score (GCI)",
+    "genes": ["SDC1", "SDC2", "SDC3", "SDC4", "GPC1", "GPC2", "GPC3", "GPC4",
+              "EXT1", "EXT2", "EXTL1", "EXTL2", "EXTL3",
+              "NDST1", "NDST2", "HS2ST1", "HS6ST1", "HS3ST1",
+              "XYLT1", "XYLT2", "B4GALT7", "B3GAT3", "B3GALT6",
+              "HAS1", "HAS2", "HAS3", "CHPF", "CHSY1", "CSGALNACT1", "CSGALNACT2"],
+    "note": "Synthesis/assembly of heparan-sulfate proteoglycans and hyaluronan; high score = structurally intact glycocalyx."
+  },
+  "GDS": {
+    "name_cn": "糖萼剪切/降解模块",
+    "name_en": "Glycocalyx shedding / degradation",
+    "score": "Glycocalyx Degradation Score (GDS)",
+    "genes": ["HPSE", "HPSE2", "HYAL1", "HYAL2", "HYAL3", "MMP2", "MMP9", "MMP14",
+              "ADAM17", "ADAMTS1", "ADAMTS4", "ADAMTS5", "SULF1", "SULF2", "NEU1",
+              "CTSB", "CTSL", "PLAUR", "TIMP1"],
+    "note": "Sheddases and sulfatases that cleave HS/HYAL chains; high score = active shedding."
+  },
+  "EIS": {
+    "name_cn": "内皮身份/机械感知模块",
+    "name_en": "Endothelial identity / mechanosensing",
+    "score": "Endothelial Identity Score (EIS)",
+    "genes": ["PECAM1", "CDH5", "CLDN5", "EMCN", "KDR", "TEK", "FLT1", "KLF2", "KLF4",
+              "NOS3", "GJA4", "GJA5", "SOX17", "SOX18", "ERG", "PROX1", "LYVE1"],
+    "note": "Core endothelial identity and shear-responsive transcription; low score = loss of endothelial identity."
+  },
+  "EAS": {
+    "name_cn": "内皮激活/免疫募集模块",
+    "name_en": "Endothelial activation / immune recruitment",
+    "score": "Endothelial Activation Score (EAS)",
+    "genes": ["VCAM1", "ICAM1", "SELE", "SELP", "CCL2", "CXCL1", "CXCL2", "CXCL5",
+              "CXCL8", "IL6", "RELA", "NFKB1", "TNFAIP3", "PTGS2", "CSF1"],
+    "note": "Leukocyte adhesion molecules and inflammatory chemokines; high score = activated, recruiting endothelium."
+  },
+  "EIDS": {
+    "name_cn": "部分EndoMT/身份漂移模块",
+    "name_en": "Partial EndoMT / identity drift",
+    "score": "Endothelial Identity-Drift Score (EIDS)",
+    "genes": ["VIM", "FN1", "TAGLN", "ACTA2", "SNAI1", "SNAI2", "TWIST1", "TWIST2",
+              "ZEB1", "ZEB2", "TGFBR1", "TGFBR2", "SERPINE1", "COL1A1", "COL4A1", "PALLD"],
+    "note": "Mesenchymal programme co-expressed with endothelial markers; high score = partial EndoMT."
+  },
+  "MFS": {
+    "name_cn": "促纤维化巨噬细胞模块",
+    "name_en": "Pro-fibrotic macrophage",
+    "score": "Macrophage Fibrosis Score (MFS)",
+    "genes": ["CCR2", "LY6C2", "SPP1", "TREM2", "GPNMB", "LGALS3", "TGFB1", "MMP14",
+              "CD9", "FABP5", "APOE", "LPL", "ARG1", "MRC1", "CD163"],
+    "note": "Monocyte-derived, scar-associated macrophage states; LY6C2 is the mouse-specific ortholog of human LY6C."
+  },
+  "FNS": {
+    "name_cn": "活化成纤维细胞/ECM模块",
+    "name_en": "Activated fibroblast / ECM niche",
+    "score": "Fibrotic Niche Score (FNS)",
+    "genes": ["POSTN", "CTHRC1", "ACTA2", "COL1A1", "COL1A2", "COL3A1", "COL5A1",
+              "COL8A1", "FN1", "LOX", "LOXL2", "TNC", "MMP2", "MMP14", "TIMP1",
+              "COMP", "THBS2", "FAP"],
+    "note": "Myofibroblast and scar-associated matrix programme; high score = established fibrotic niche."
+  },
+  "MRS": {
+    "name_cn": "机械反馈模块",
+    "name_en": "ECM mechano-feedback",
+    "score": "Mechano-feedback Score (MRS)",
+    "genes": ["YAP1", "WWTR1", "TEAD1", "TEAD2", "TEAD3", "TEAD4",
+              "CCN1", "CCN2", "ITGB1", "ITGA5", "PTK2", "RHOA", "ROCK1", "ROCK2",
+              "MYH9", "VCL", "TLN1", "LATS1", "LATS2"],
+    "aliases": {"CCN1": ["CYR61"], "CCN2": ["CTGF"]},
+    "note": "YAP/TAZ-TEAD mechanotransduction and focal-adhesion genes; CCN1/CCN2 = CYR61/CTGF."
+  },
+  "EGNS": {
+    "name_cn": "糖萼非消退评分",
+    "name_en": "Endothelial Glycocalyx Non-resolution Score",
+    "formula": "EGNS = z(GDS) + z(EAS) + z(EIDS) - z(GCI) - z(EIS)",
+    "note": "Discovery/ranking metric only. It is a transcriptional STATE PROXY and must be calibrated against direct structural/shedding measurements (HS staining, lectin, EM)."
+  }
+}

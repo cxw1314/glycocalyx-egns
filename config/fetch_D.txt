@@ -1,0 +1,1 @@
+https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL17nnn/GPL17586/soft/GPL17586_family.soft.gz|glycocalyx_cvd\data\raw\GPL17586\GPL17586_family.soft.gz

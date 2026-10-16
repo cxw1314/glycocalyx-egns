@@ -1,0 +1,2 @@
+https://ftp.ncbi.nlm.nih.gov/geo/series/GSE123nnn/GSE123342/matrix/GSE123342_series_matrix.txt.gz|glycocalyx_cvd\data\raw\GSE123342\GSE123342_series_matrix.txt.gz
+https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL17nnn/GPL17586/annot/GPL17586.annot.gz|glycocalyx_cvd\data\raw\GPL17586\GPL17586.annot.gz
