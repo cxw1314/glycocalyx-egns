@@ -1,3 +1,7 @@
+
+## CITATION.cff
+
+```yaml
 cff-version: 1.2.0
 message: "If you use this code, please cite the manuscript below."
 title: "glycocalyx-egns"
@@ -10,6 +14,7 @@ version: "1.0.0"
 date-released: "2026-10-16"
 license: MIT
 repository-code: "https://github.com/cxw1314/glycocalyx-egns"
+doi: "10.5281/zenodo.23416573"
 authors:
   - family-names: "Cao"
     given-names: "Xingwang"
